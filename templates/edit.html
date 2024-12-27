@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Edit
+{% endblock %}
+
+{% block main %}
+    <h1>Edit</h1>
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm" style="background-color: #303138; border-radius: 10px; color: #57A6A1;">
+                    <div class="card-body">
+                        <form action="{{ url_for('edit', id=note[0]) }}" method="post">
+                        <!-- Title -->
+                            <div class="mb-3">
+                                <label for="title" class="form-label" style="color: #82aaff;">Title</label>
+                                <input type="text" class="form-control" id="title" name="title" value="{{ note[2] }}">
+                            </div>
+                        <!-- Category -->
+                            <div class="mb-3">
+                                <label for="category" class="form-label" style="color: #c3e88d;">Category</label>
+                                <select class="form-control" name="category" required>
+                                    <option value="" disabled selected>Category</option>
+                                    <option value="school" {% if note[1] == 'school' %} selected {% endif %}>School</option>
+                                    <option value="work" {% if note[1] == 'work' %} selected {% endif %}>Work</option>
+                                    <option value="hobbies" {% if note[1] == 'hobbies' %} selected {% endif %}>Hobbies</option>
+                                    <option value="other" {% if note[1] == 'other' %} selected {% endif %}>Other</option>
+                                </select>
+                            </div>
+                        <!-- Content -->
+                            <div class="mb-3">
+                                <label for="content" class="form-label" style="color: #ffffff;">Content</label>
+                                <textarea class="form-control" id="content" name="content" rows="4">{{ note[3] }}</textarea>
+                            </div>
+                        <!-- Date -->
+                            <div class="mb-3">
+                                <label for="date" class="form-label" style="color: #ffcb6b;">Date</label>
+                                <input type="text" class="form-control" id="date" name="date" value="{{ note[4] }}">
+                            </div>
+                        <!-- Submit Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-sm btn-edit-primary" type="submit">Submit Edit</button>
+                            <!-- the submit button tells the form to send the data -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

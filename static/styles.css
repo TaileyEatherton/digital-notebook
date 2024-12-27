@@ -1,0 +1,23 @@
+.btn-edit-primary {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: #82aaff;
+    --bs-btn-border-color: #82aaff;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #82aaff;
+    --bs-btn-hover-border-color: #82aaff;
+    --bs-btn-active-color: #82aaff;
+    --bs-btn-active-bg: #82aaff;
+    --bs-btn-active-border-color: #82aaff;
+  }
+
+  .btn-delete-primary {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: #e57373;
+    --bs-btn-border-color: #e57373;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #e57373;
+    --bs-btn-hover-border-color: #e57373;
+    --bs-btn-active-color: #e57373;
+    --bs-btn-active-bg: #e57373;
+    --bs-btn-active-border-color: #e57373;
+  }

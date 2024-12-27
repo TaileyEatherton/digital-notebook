@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    New Note
+{% endblock %}
+
+{% block main %}
+    <h1>New Note</h1>
+
+    <form action="/note/new" method="post">
+
+        <div class="row d-flex justify-content-center">
+        <!-- Dropdown for Category -->
+            <div class="col-2">
+                <select class="form-control" name="category" required>
+                    <option value="" disabled selected>Category</option>
+                    <option value="school">School</option>
+                    <option value="work">Work</option>
+                    <option value="hobbies">Hobbies</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="col-2">
+                <input class="form-control" name="title" placeholder="Title" type="text">
+            </div>
+
+            <div class="col-2">
+                <input class="form-control" name="date" placeholder="Date" type="text">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <textarea class="form-control mx-auto w-50" id="exampleFormControlTextarea1" name="content" placeholder="Content" type="text" rows="10"></textarea>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+{% endblock %}
