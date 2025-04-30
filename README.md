@@ -6,9 +6,8 @@ This project aims to provide users with a clean and intuitive interface to manag
 
 ## Setup Instructions
 
-1. **Clone the Repository**
    ```bash
-   # Git digital notebook
+   # Clone repository
    git clone https://github.com/TaileyEatherton/digital-notebook.git
    cd digital-notebook
    #(optional)Create pyhton environment and activate it
