@@ -1,9 +1,23 @@
 # Digital Notebook
-#### Video Demo:  <URL HERE>
 #### Description:
 The Digital Notebook project is a simple web application built using Python and Flask. Useres can create, view, edit, and delete notes. This web-based application leverages SQLite as the database to store user-generated notes. The app supports categorization of notes into predefined categories such as School, Work, Hobbies, and Other. The application features a responsive design and is styled using Bootstrap, making it mobile-friendly.
 
 This project aims to provide users with a clean and intuitive interface to manage their personal notes and organize them based on categories. It also supports CRUD (Create, Read, Update, Delete) operations for note management. The Digital Notebook is an excellent tool for anyone looking to keep track of their ideas with efficient simplicity.
+
+## Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   # Git digital notebook
+   git clone https://github.com/TaileyEatherton/digital-notebook.git
+   cd digital-notebook
+   #(optional)Create pyhton environment and activate it
+   python -m venv venv
+   source venv/bin/activate
+   #Install Flask
+   pip install Flask
+   #Run application
+   flask run
 
 ## Features
 - **Create Notes**: Users can add new notes by selecting a category, entering a title, content, and date.
@@ -75,20 +89,3 @@ The decision to use Bootstrap for styling was made to save development time whil
 
 ### SQLite Database
 SQLite was chosen as the database due to its simplicity and ease of integration with Flask. It requires minimal setup and is perfect for a small-scale application like the Digital Notebook. Although a more powerful database system like PostgreSQL or MySQL could be used for scaling, SQLite is more than sufficient for this project.
-
-## Setup Instructions
-
-1. **Clone the Repository**
-   ```bash
-   # Git digital notebook
-   git clone https://github.com/TaileyEatherton/digital-notebook.git
-   cd digital-notebook
-   #(optional)Create pyhton environment and activate it
-   python -m venv venv
-   source venv/bin/activate
-   #Install Flask
-   pip install Flask
-   #Run application
-   flask run
-   
-
