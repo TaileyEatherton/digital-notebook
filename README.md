@@ -80,5 +80,15 @@ SQLite was chosen as the database due to its simplicity and ease of integration 
 
 1. **Clone the Repository**
    ```bash
+   # Git digital notebook
    git clone https://github.com/TaileyEatherton/digital-notebook.git
    cd digital-notebook
+   #(optional)Create pyhton environment and activate it
+   python -m venv venv
+   source venv/bin/activate
+   #Install Flask
+   pip install Flask
+   #Run application
+   flask run
+   
+
