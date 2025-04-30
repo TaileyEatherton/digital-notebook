@@ -17,7 +17,7 @@ This project aims to provide users with a clean and intuitive interface to manag
    pip install Flask
    #Run application
    flask run
-'''
+```
 
 
 ## Features
