@@ -20,7 +20,7 @@ This project aims to provide users with a clean and intuitive interface to manag
 ```
 ## 📸 Screenshot
 
-![Digital_Notebook](png)
+![Digital_Notebook](Digital_Notebook.png)
 
 ## Features
 - **Create Notes**: Users can add new notes by selecting a category, entering a title, content, and date.
