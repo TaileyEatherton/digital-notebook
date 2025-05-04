@@ -1,4 +1,9 @@
 # Digital Notebook
+
+## 📸 Screenshot
+
+![Digital_Notebook](Digital_Notebook.png)
+
 #### Description:
 The Digital Notebook project is a simple web application built using Python and Flask. Useres can create, view, edit, and delete notes. This web-based application leverages SQLite as the database to store user-generated notes. The app supports categorization of notes into predefined categories such as School, Work, Hobbies, and Other. The application features a responsive design and is styled using Bootstrap, making it mobile-friendly.
 
@@ -18,9 +23,6 @@ This project aims to provide users with a clean and intuitive interface to manag
    #Run application
    flask run
 ```
-## 📸 Screenshot
-
-![Digital_Notebook](Digital_Notebook.png)
 
 ## Features
 - **Create Notes**: Users can add new notes by selecting a category, entering a title, content, and date.
